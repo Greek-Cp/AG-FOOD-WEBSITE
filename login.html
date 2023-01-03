@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="./login.css">
+
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="update.php" method ="POST">
+			<div class="ribet">
+				<h1>Lupa Sandi?</h1>
+			</div>
+			<span class="iya">Lakukan Pembaruan</span>
+			<input type="email" placeholder="Email" name="txt_email_lama" />
+			<input class="pq" type="password" placeholder="Masukkan Sandi Baru" name ="txt_passbaru"/>
+			<button name="submit_update" class="qr" >Konfirmasi</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="login.php" method="POST" class ="user">
+			<h1 class="awal">AG FOOD</h1>
+			<span>Masuk ke akun anda</span>
+			<input type="email" placeholder="Email" name="txt_email" />
+			<input type="password" placeholder="Masukkan Sandi" name ="txt_pass"/>
+			<a id = "btnForgot" href="#">Lupa Sandi?</a>
+			<button name="submit" ><a href="" class="button">Masuk</a></button>
+			
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h3> Klik Batal</h3>
+				<p class="batal">Jika ingin membatalkan pembaruan Katasandi</p>
+				<button class="ghost" id="signIn">Batal</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h2>Hello, Admin!</h2>
+				<p>Selamat Datang di AG FOOD!!</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- partial -->
+  <script  src="./login.js"></script>
+
+</body>
+</html>
